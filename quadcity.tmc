@@ -1,0 +1,132 @@
+<[file][][]
+// Cockpit type: General Aviation
+// Vfe1_kts: 999.0 flaps extended 1st dep
+// Vle_kts: 99999.0 maximum landing-gear extended speed
+// Vne_kts: 100.0 never exeed speed
+// Empty mass [lb]: 460 [kg]: 208.7
+// Fuel mass [lb]: 86 [kg]: 39.0 => about [L]: 50.0
+// max mass [lb]: 1200 [kg]: 544.3
+// model mass [lb]: 546 [kg]: 247.7
+// load G: -3.0 to 6.0
+// Ground altitude: 0.4463 2.98 deg
+// Propeller 0 [-1.425 0.000 0.616]  blades 3 CCW  radius [m] 0.802 mass [kg] 0.0
+// Max HP power: 65.0 (48.5 kW)
+// TCAS equiped
+// Radio COMM equiped
+// Stall warning AOA 10.0
+// THROTTLE control
+//   no|area|R0|R1|T0|T1|span|Croot|Ctip|x|y|z|fl0|fl1|flb|L_R|name|description
+//   0|0.076|Clark-Y (good propeller).afl ||||0.802|0.130|0.061|-0.727|-0.401|0.000||||R|Propeller|
+//   8|8.989|NACA 2412 (popular).afl ||||4.999|1.798|1.798|-0.391|2.499|0.530|ailn1|||L|LeftWing|
+//   9|8.989|NACA 2412 (popular).afl ||||4.999|1.798|1.798|-0.391|-2.499|0.530|ailn1|||R|RightWing|
+//   16|1.561|NACA 0009 (symmetrical).afl ||||1.280|1.219|1.219|-3.474|0.640|-0.128|elev1|||L|LeftStabilizer|
+//   17|1.561|NACA 0009 (symmetrical).afl ||||1.280|1.219|1.219|-3.474|-0.640|-0.128|elev1|||R|RightStabilizer|
+//   18|1.041|NACA 0009 (symmetrical).afl ||||1.219|1.097|0.610|-3.414|0.000|0.204|rudd1|||R|VertStabilizer1|
+//   parts no|radius|name|size x*y*z|Cd|description|
+//   56|4.0|Fuselage|4.883 0.951 1.509|0.174999997|FUSEL
+//   57|0.200000003|MiscBody1|3.169 0.116 0.046|0.100000001|engine to body fairing
+//   58|0.200000003|MiscBody2|3.169 0.116 0.046|0.100000001|ventral static fin
+//   59|0.200000003|MiscBody3|3.169 0.116 0.046|0.100000001|Tail section
+//   60|0.200000003|MiscBody4|3.169 0.116 0.046|0.100000001|Exhaust
+//   61|0.200000003|MiscBody5|0.829 0.116 0.046|0.100000001|JA gun pod useless now
+//   62|0.200000003|MiscBody6|0.829 0.116 0.046|0.100000001|Nose
+//   gear no|name|X|Y|Z|Type|Fraction|Length|radius|retract|SteerLo|SteerHi|weight|width
+//   gear 0|FrontWheelHull|1.458|0.000|-1.003|2|0.115|0.000|0.168|0.000|0.3491|0.3491|9.0|0.122
+//   gear 1|LeftWheelHull|-0.142|0.914|-1.003|2|0.442|0.000|0.168|0.000|0.0000|0.0000|9.0|0.122
+//   gear 2|RightWheelHull|-0.142|-0.914|-1.003|2|0.442|0.000|0.168|0.000|0.0000|0.0000|9.0|0.122
+//   gear 3|TailWheelHull|-3.416|0.000|-0.430|2|0.000|0.000|0.040|0.000|0.0000|0.0000|3.6|0.043
+// CG range: 0.21 to -0.70
+// Rigidbody: Fuselage 155.2 kg at 0.062
+// Rigidbody: 8 LeftWing 31.0 kg at -0.391
+// Rigidbody: 9 RightWing 31.0 kg at -0.391
+// Gearbody: 0 FrontWheelHull 9.0 kg at 1.458
+// Gearbody: 1 LeftWheelHull 9.0 kg at -0.142
+// Gearbody: 2 RightWheelHull 9.0 kg at -0.142
+// Gearbody: 3 TailWheelHull 3.6 kg at -3.416
+// CG (fuselage): 0.062 (plane) -0.066 (delta) 0.080
+// Plane ref: undefined
+//   empty craft 208.7 kg at -0.090400
+//   fuel tank #1 42.9 kg at -0.486640
+//   fuel tank #2 0.5 kg at -0.700000
+//   fuel tank #3 0.5 kg at -0.700000
+//   fuel tank #4 0.5 kg at -0.700000
+//   fuel tank #5 0.5 kg at -0.700000
+//   fuel tank #6 0.5 kg at -0.700000
+//   fuel tank #7 0.5 kg at -0.700000
+//   fuel tank #8 0.5 kg at -0.700000
+//   fuel tank #9 0.5 kg at -0.700000
+// Elevator -30.0 to 30.0 width 0.40  <[float64][Scaling][1.9099]>
+// Aileron -17.0 to 17.0 width 0.14  <[float64][Scaling][3.3703]>
+// Rudder -30.0 to 30.0 width 0.50  <[float64][Scaling][1.9099]>
+//-------------------------------------------------------
+// ghost empty mass [kg] :208.7 fuelled [kg] :247.7 max [kg] :544.3
+//-------------------------------------------------------
+// No 0 FrontWheelHull single   Steering (20.00/20.00)
+//    Fraction weight: 0.11501 kg :28.5
+// Pivot lon lat vert: 1.457984 0.000000 -1.002792
+// Length [m]: 0.0000 Radius [m]: 0.1676 Semi-width [m]: 0.0610 tire_mi : 0.0000
+// Dep_rat: 1 Scon: 2929.348632812
+// Deflection [m]- zero load : 0.0144 empty :0.0000 max :0.0000
+// Damping constants (lb/(ft/s)) :146.467437744 kg/(m/s) : 217.9676
+//-------------------------------------------------------
+// No 1 LeftWheelHull single   
+// Brakes   Fraction weight: 0.44249 kg :109.6
+// Pivot lon lat vert: -0.142216 0.914400 -1.002792
+// Length [m]: 0.0000 Radius [m]: 0.1676 Semi-width [m]: 0.0610 tire_mi : 0.0000
+// Dep_rat: 1 Scon: 2929.348632812
+// Deflection [m]- zero load : 0.0552 empty :0.0000 max :0.0000
+// Damping constants (lb/(ft/s)) :146.467437744 kg/(m/s) : 217.9676
+//-------------------------------------------------------
+// No 2 RightWheelHull single   
+// Brakes   Fraction weight: 0.44249 kg :109.6
+// Pivot lon lat vert: -0.142216 -0.914400 -1.002792
+// Length [m]: 0.0000 Radius [m]: 0.1676 Semi-width [m]: 0.0610 tire_mi : 0.0000
+// Dep_rat: 1 Scon: 2929.348632812
+// Deflection [m]- zero load : 0.0552 empty :0.0000 max :0.0000
+// Damping constants (lb/(ft/s)) :146.467437744 kg/(m/s) : 217.9676
+//-------------------------------------------------------
+// No 3 TailWheelHull single   
+//    Fraction weight: 0.00000 kg :0.0
+// Pivot lon lat vert: -3.415768 0.000000 -0.429768
+// Length [m]: 0.0000 Radius [m]: 0.0396 Semi-width [m]: 0.0213 tire_mi : 0.0000
+// Dep_rat: 1 Scon: 346.195709229
+// Deflection [m]- zero load : 0.0000 empty :0.0000 max :0.0000
+// Damping constants (lb/(ft/s)) :17.30978775 kg/(m/s) : 25.7598
+//-------------------------------------------------------
+    <[object][][]
+        <[int][Version][220]>
+        <[vec32array][ContactSpheres][ (1.458 0.000 -1.003 0.168) (-0.142 0.914 -1.003 0.168) (-0.142 -0.914 -1.003 0.168) ]>
+        <[string8][ICAO][]>
+        <[string8][DisplayName][Quad City Challenger II]>
+        <[string8][DisplayNameFull][Quad City Challenger II long wing]>
+        <[localized_text_list][Descriptions][]
+            <[localized_text][][]
+                <[string8][Language][en]>
+                <[string8][Text][The Quad City Challenger ultralight is a high wing, tricycle gear kit aircraft with a frame structure. It can accept a variety of engines ranging from 50hp to 70hp. Made by Krzysztof Kaniewski. 3D model: Garren Hansen.]>
+            >
+            <[localized_text][][]
+                <[string8][Language][de]>
+                <[string8][Text][Das Ultraleichtflugzeug Quad City Challenger ist ein Hochdecker mit Dreiradfahrwerk und einem Rahmen aus Stangen. Es kann verschiedene Motoren mit einer Leistung von 50 PS bis 70 PS aufnehmen. Hergestellt von Krzysztof Kaniewski. 3D-Modell: Garren Hansen.]>
+            >			
+        >
+        <[float64][MaximumTakeoffMass][544.3]>
+        <[float64][WingSpan]          [10.0]>
+        <[uint]   [Year]              [1960]>
+        <[uint]   [UnitsBuilt]        [6884]>
+        <[uint]   [EngineCount]       [1]>
+        <[float64][EnginePower]       [48470]>
+        <[float64][MinimumAirspeed]   [0.0]>
+        <[float64][ApproachAirspeed]  [0.0]>
+        <[float64][CruiseAirspeed]    [45.0]>
+        <[float64][CruiseAltitude]    [3352.8]>
+        <[float64][CruiseSpeed]       [47.5]>
+        <[float64][MaximumAirspeed]   [50.0]>
+        <[float64][MaximumAltitude]   [6306.0]>
+        <[float64][MaximumSpeed]      [50.0]>
+        <[float64][MaximumRange]      [2276000.0]>
+        <[tmvector2d][NormalAirspeedRange][ 0.0 0.0 ]>
+        <[tmvector2d][CautionAirspeedRange][ 0.0 50.0 ]>
+        <[string8][Tags][ airplane piston general_aviation ultralight gear floats ]>
+        <[string8][Pilot][pilot_daniel]>
+    >
+>
