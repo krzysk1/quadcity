@@ -270,17 +270,12 @@
                 <[uint32][OrientationID][Fuselage.Q]>
             >
 			// right wheel
-            <[graphics_input][Static_translation_Input][]
+            <[graphics_input][GearTranslationInput][]
                 <[uint32][InputID][ServoThrottle.Output]>
                 <[float64][Scaling][1.0000]>
             >
-
-            <[graphics_linear_interpolation][FloatsMapping_188][]
-                <[string8][Input][Static_translation_Input.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.065087)]>
-            >
             <[graphics_translation][FloatsMoving_188][]
-                <[string8][Input][FloatsMapping_188.Output]>
+                <[string8][Input][GearTranslationInput.Output]>
                 <[tmvector3d][Axis][0.0 0.0 -0.065087]>
             >
             <[graphics_linear_interpolation][FloatsMapping_190][]
@@ -300,12 +295,8 @@
                 <[string8][InputTransform][FloatsRotate_190.Output]>
             >
 			// left wheel
-            <[graphics_linear_interpolation][FloatsMapping_195][]
-                <[string8][Input][Static_translation_Input.Output]>
-                <[tmvector2d][Map][ (0.0 0.0) (1.0 0.065087)]>
-            >
             <[graphics_translation][FloatsMoving_195][]
-                <[string8][Input][FloatsMapping_195.Output]>
+                <[string8][Input][GearTranslationInput.Output]>
                 <[tmvector3d][Axis][0.0 0.0 -0.065087]>
             >
             <[graphics_linear_interpolation][FloatsMapping_197][]
@@ -326,19 +317,19 @@
             >
 			// front wheel
             <[graphics_linear_interpolation][FloatsMapping_202][]
-                <[string8][Input][Static_translation_Input.Output]>
+                <[string8][Input][GearTranslationInput.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (1.0 0.124071)]>
             >
             <[graphics_translation][FloatsMoving_202][]
                 <[string8][Input][FloatsMapping_202.Output]>
                 <[tmvector3d][Axis][0.031171 0.0 -0.120092]>
             >
-            <[graphics_linear_interpolation][FloatsMapping_204][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(-22.0 0.383972) (22.0 -0.383972)]>
+            <[graphics_input][ServoSteeringInput][]
+                <[uint32][InputID][ServoSteering.Output]>
+                <[float64][Scaling][-1.0]>
             >
             <[graphics_rotation][FloatsRotate_204][]
-                <[string8][Input][FloatsMapping_204.Output]>
+                <[string8][Input][ServoSteeringInput.Output]>
                 <[tmvector3d][Axis][0.260929 0.0 -0.965358]>
                 <[tmvector3d][Pivot][1.404826 0.0 -0.810306]>
                 <[string8][InputTransform][FloatsMoving_202.Output]>
@@ -379,7 +370,7 @@
                 <[string8][GeometryList][ Floatscockpit499749 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][Static_rotation_Input.Output]>
+                <[uint32][InputID][CanopyInput.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.204866 0.013323 -0.162335]>
                 <[float64][Offset][0.261799]>

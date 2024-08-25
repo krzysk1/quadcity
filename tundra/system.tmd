@@ -213,7 +213,7 @@
                 <[string8][GeometryList][ Cockpit4593011 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][Static_rotation_Input.Output]>
+                <[uint32][InputID][CanopyInput.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.204866 0.000347 -0.162335]>
                 <[float64][Offset][0.261799]>
