@@ -9,7 +9,7 @@
                 <[tmvector3d][R0][0.062 0.000 0.014]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
-			
+
             // FrontGear
             <[rigidbody][FrontGear][]
                 <[float64][Mass][5.5]>
@@ -174,8 +174,8 @@
             <[output][GroundRollLoadTailWheel][]
                 <[string8][Input][TailWheelHull.Load]>
             >
-			
-            // bodies		
+
+            // bodies
             <[aerofuselage][LeftSwimmerAero][]
                 <[string8][Body][Fuselage]>
                 <[float64][StationX][ 2.070 1.979 1.827 1.432 -0.000 -0.245 -0.702 -2.227 ]>
@@ -206,11 +206,11 @@
                 <[float64][Clz][ 1.0 ]>
                 <[float64][Cm][ 0.0 ]>
             >
-			
+
             <[input_binary][GearInput][]
                 <[string8][Message][Controls.Gear]>
                 <[float64][Value][1.0]>
-            >				
+            >
             <[servoclassic][GearLever][]
                 <[string8][Input][GearInput.Output]>
                 <[float64][Speed][15.0]>
@@ -223,7 +223,7 @@
             <[sender][SenderGearInput][]
                 <[string8][Input][GearInput.Output]>
                 <[string8][Message][Controls.Gear]>
-            >			
+            >
             // gear sequence
             <[ground_sensor][OnGroundSensor][]
                 <[string8][InputLeftLoad] [LeftWheelHull.Load]>
@@ -232,7 +232,7 @@
             >
             <[logic_invert][InAir][]
                 <[string8][Input][OnGroundSensor.Output]>
-            >		
+            >
             <[logic_or][GearDownOrOnGround][]
                 <[string8][Inputs][ GearInput.Output OnGroundSensor.Output ]>
             >
@@ -258,7 +258,7 @@
             >
             <[output_free][ServoGearOutput][]
                 <[string8][Input][ServoGear.Output]>
-            >				
+            >
         >
         <[pointer_list_tmgraphics][GraphicObjects][]
 
@@ -269,6 +269,12 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
+			// right wheel
+            <[graphics_input][Static_translation_Input][]
+                <[uint32][InputID][ServoThrottle.Output]>
+                <[float64][Scaling][1.0000]>
+            >
+
             <[graphics_linear_interpolation][FloatsMapping_188][]
                 <[string8][Input][Static_translation_Input.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (1.0 0.065087)]>
@@ -287,12 +293,13 @@
                 <[tmvector3d][Pivot][-0.145118 -0.909573 -1.188467]>
                 <[string8][InputTransform][FloatsMoving_188.Output]>
             >
-            <[rigidbodygraphics][Floats_14920_1][]
+            <[rigidbodygraphics][FloatsRightWheel][]
                 <[string8][GeometryList][ Floats149201 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][FloatsRotate_190.Output]>
             >
+			// left wheel
             <[graphics_linear_interpolation][FloatsMapping_195][]
                 <[string8][Input][Static_translation_Input.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (1.0 0.065087)]>
@@ -307,7 +314,7 @@
             >
             <[graphics_rotation][FloatsRotate_197][]
                 <[string8][Input][FloatsMapping_197.Output]>
-                <[tmvector3d][Axis][0.000044 -1.0 0.0]>
+                <[tmvector3d][Axis][0.000044 1.0 0.0]>
                 <[tmvector3d][Pivot][-0.145140 0.914830 -1.188466]>
                 <[string8][InputTransform][FloatsMoving_195.Output]>
             >
@@ -317,6 +324,7 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][FloatsRotate_197.Output]>
             >
+			// front wheel
             <[graphics_linear_interpolation][FloatsMapping_202][]
                 <[string8][Input][Static_translation_Input.Output]>
                 <[tmvector2d][Map][ (0.0 0.0) (1.0 0.124071)]>
@@ -341,268 +349,42 @@
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputTransform][FloatsRotate_204.Output]>
             >
-            <[graphics_linear_interpolation][FloatsMapping_210][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0) (180.0 3.141593)]>
-            >
-            <[graphics_rotation][FloatsRotate_210][]
-                <[string8][Input][FloatsMapping_210.Output]>
-                <[tmvector3d][Axis][0.0 1.0 0.0]>
-                <[tmvector3d][Pivot][1.504709 -0.004166 -1.182899]>
-                <[string8][InputTransform][FloatsRotate_204.Output]>
-            >
-            <[rigidbodygraphics][Floats_37978_1][]
+            <[hingedbodygraphics][FloatsFrontWheel][]
                 <[string8][GeometryList][ Floats379781 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsRotate_210.Output]>
+                <[uint32][InputID][FrontWheelHull.RotationAngle]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][1.504709 -0.004166 -1.182899]>
+                <[string8][Graphics][Floats_37666_1]>
             >
-        // ChallengerII Floats_cockpit
-        // --------------------------------
-            <[rigidbodygraphics][FloatsCockpit_35826_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit9 ChallengerIIFloatscockpit69 ChallengerIIFloatscockpit4269 ChallengerIIFloatscockpit57789 ChallengerIIFloatscockpit59229 ChallengerIIFloatscockpit318309 ChallengerIIFloatscockpit320229 ChallengerIIFloatscockpit345429 ChallengerIIFloatscockpit352149 ChallengerIIFloatscockpit357909 ChallengerIIFloatscockpit358269 ]>
+
+			// floats switched
+            <[rigidbodygraphics][FloatsSwitchLabels][]
+                <[string8][GeometryList][ Floatscockpit57789 Floatscockpit358389 Floatscockpit492789 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
-            <[rigidbodygraphics][FloatsCockpit_35838_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit358389 ]>
+            <[hingedbodygraphics][FloatsSwitchGear][]
+                <[string8][GeometryList][ Floatscockpit365349 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_707][]
                 <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 -0.261799) (1.0 0.261799)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_707][]
-                <[string8][Input][FloatsCockpitMapping_707.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.204870 -0.012486 -0.162335]>
+                <[float64][Offset][-0.261799]>
+                <[float64][Scaling][0.523598]>
             >
-            <[rigidbodygraphics][FloatsCockpit_36534_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit365349 ]>
+            <[hingedbodygraphics][FloatsSwitchDoor][]
+                <[string8][GeometryList][ Floatscockpit499749 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_707.Output]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_39846_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit398469 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_714][]
                 <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 -0.261799) (1.0 0.261799)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_714][]
-                <[string8][Input][FloatsCockpitMapping_714.Output]>
-                <[tmvector3d][Axis][0.0 -1.0 0.0]>
-                <[tmvector3d][Pivot][1.200336 0.013733 -0.190344]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_40542_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit405429 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_714.Output]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_43854_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit438549 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_721][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 -0.261799) (1.0 0.261799)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_721][]
-                <[string8][Input][FloatsCockpitMapping_721.Output]>
-                <[tmvector3d][Axis][0.0 -1.0 0.0]>
-                <[tmvector3d][Pivot][1.200336 -0.012362 -0.190344]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_44550_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit445509 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_721.Output]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_47862_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit478629 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[graphics_input][Ignition_on_0_Input][]
-                <[uint32][InputID][ServoCheck.Output]> //sim/cockpit2/engine/actuators/ignition_on[0]
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_728][]
-                <[string8][Input][Ignition_on_0_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0)(1.0 -0.436332)(2.0 -0.872665)(3.0 -1.308997)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_728][]
-                <[string8][Input][FloatsCockpitMapping_728.Output]>
-                <[tmvector3d][Axis][-0.984808 0.0 0.173649]>
-                <[tmvector3d][Pivot][1.207398 -0.136421 -0.115770]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_47934_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit479349 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_728.Output]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_48246_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit482469 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[graphics_input][Ignition_key_0_Input][]
-                <[uint32][InputID][ServoCheck.Output]> //sim/cockpit2/engine/actuators/ignition_key[0]
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_740][]
-                <[string8][Input][Ignition_key_0_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0)(1.0 0.0)(2.0 0.0)(3.0 0.0)(4.0 -1.308997)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_740][]
-                <[string8][Input][FloatsCockpitMapping_740.Output]>
-                <[tmvector3d][Axis][-0.984808 0.0 0.173649]>
-                <[tmvector3d][Pivot][1.207398 -0.203513 -0.115770]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_48318_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit483189 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_740.Output]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_752][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.544194) (1600.0 -0.837060)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_752][]
-                <[string8][Input][FloatsCockpitMapping_752.Output]>
-                <[tmvector3d][Axis][-0.984808 0.0 0.173648]>
-                <[tmvector3d][Pivot][1.193420 -0.099472 -0.178402]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_48630_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit486309 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_752.Output]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_758][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.568279) (600.0 -0.876504)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_758][]
-                <[string8][Input][FloatsCockpitMapping_758.Output]>
-                <[tmvector3d][Axis][0.984808 0.0 -0.173648]>
-                <[tmvector3d][Pivot][1.193480 -0.149336 -0.178025]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_48738_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit487389 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_758.Output]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_764][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.544194) (600.0 -0.837060)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_764][]
-                <[string8][Input][FloatsCockpitMapping_764.Output]>
-                <[tmvector3d][Axis][-0.984808 0.0 0.173648]>
-                <[tmvector3d][Pivot][1.193480 -0.195936 -0.178025]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_48846_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit488469 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_764.Output]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_770][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.558505) (1600.0 -0.872665)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_770][]
-                <[string8][Input][FloatsCockpitMapping_770.Output]>
-                <[tmvector3d][Axis][0.984808 0.0 -0.173648]>
-                <[tmvector3d][Pivot][1.193420 -0.052872 -0.178402]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_48954_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit489549 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_770.Output]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_776][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.568279) (20.0 -0.876504)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_776][]
-                <[string8][Input][FloatsCockpitMapping_776.Output]>
-                <[tmvector3d][Axis][0.984808 0.0 -0.173648]>
-                <[tmvector3d][Pivot][1.193350 -0.243504 -0.178779]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_49062_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit490629 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_776.Output]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_782][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(-30.0 0.544194) (30.0 -0.837060)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_782][]
-                <[string8][Input][FloatsCockpitMapping_782.Output]>
-                <[tmvector3d][Axis][-0.984808 0.0 0.173648]>
-                <[tmvector3d][Pivot][1.193350 -0.290104 -0.178779]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_49170_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit491709 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_782.Output]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_49278_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit492789 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_789][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.261799) (1.0 -0.261799)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_789][]
-                <[string8][Input][FloatsCockpitMapping_789.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.204866 0.013323 -0.162335]>
+                <[float64][Offset][0.261799]>
+                <[float64][Scaling][-0.523598]>
             >
-            <[rigidbodygraphics][FloatsCockpit_49974_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit499749 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_789.Output]>
-            >
-            <[graphics_input][Airspeed_kts_pilot_Input][]
-                <[uint32][InputID][ServoCheck.Output]> //sim/cockpit2/gauges/indicators/airspeed_kts_pilot
-            >
-            <[graphics_linear_interpolation][FloatsCockpitMapping_795][]
-                <[string8][Input][Airspeed_kts_pilot_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0)(28.0 0.785398)(69.0 3.648786)(105.0 5.497788)]>
-            >
-            <[graphics_rotation][FloatsCockpitRotate_795][]
-                <[string8][Input][FloatsCockpitMapping_795.Output]>
-                <[tmvector3d][Axis][0.984808 0.0 -0.173648]>
-                <[tmvector3d][Pivot][1.201052 0.201434 -0.151026]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_53286_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit532869 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FloatsCockpitRotate_795.Output]>
-            >
-            <[rigidbodygraphics][FloatsCockpit_53586_9][]
-                <[string8][GeometryList][ ChallengerIIFloatscockpit535869 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >			
         >
     >
 >
