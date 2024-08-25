@@ -4,9 +4,9 @@
 
             // airframe
             <[rigidbody][Fuselage][]
-                <[float64][Mass][137.2]>
+                <[float64][Mass][139.2]>
                 <[tmvector3d][InertiaLength][4.883 0.951 1.509]>
-                <[tmvector3d][R0][0.062 0.000 0.014]>
+                <[tmvector3d][R0][0.162 0.000 0.014]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
 
@@ -39,56 +39,6 @@
                 <[tmvector3d][Rotation1Axis][ 0.000 0.000 -1.000 ]>
                 <[float64][Rotation1Angle][1.0]>
             >
-
-            // LeftGear
-            <[rigidbody][LeftGear][]
-                <[float64][Mass][19.2]>
-                <[tmvector3d][InertiaLength][ 0.494 0.177 0.494 ]>
-                <[tmvector3d][R0][-0.145 0.960 -1.021]>
-                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-            >
-            <[multibody_joint][JointFuselageLeftGear][]
-                <[string8][Body0][Fuselage]>
-                <[string8][Body1][LeftGear]>
-                <[tmvector3d][X0][0.0 0.0 1.0]>
-                <[tmvector3d][R0][ -0.145 0.960 -1.021 ]>
-                <[float64][Kp][112000.42643]>
-                <[float64][Kd][224.2132]>
-                <[uint32][Type][1]>
-            >
-
-            // RightGear
-            <[rigidbody][RightGear][]
-                <[float64][Mass][19.2]>
-                <[tmvector3d][InertiaLength][ 0.494 0.177 0.494 ]>
-                <[tmvector3d][R0][-0.145 -0.960 -1.021]>
-                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-            >
-            <[multibody_joint][JointFuselageRightGear][]
-                <[string8][Body0][Fuselage]>
-                <[string8][Body1][RightGear]>
-                <[tmvector3d][X0][0.0 0.0 1.0]>
-                <[tmvector3d][R0][ -0.145 -0.960 -1.021 ]>
-                <[float64][Kp][112000.42643]>
-                <[float64][Kd][224.2132]>
-                <[uint32][Type][1]>
-            >
-
-            // TailGear
-            <[rigidbody][TailGear][]
-                <[float64][Mass][3.6]>
-                <[tmvector3d][InertiaLength][ 0.200 0.043 0.080 ]>
-                <[tmvector3d][R0][-3.416 0.000 -0.430]>
-                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
-            >
-            <[multibody_joint][JointFuselageTailGear][]
-                <[string8][Body0][Fuselage]>
-                <[string8][Body1][TailGear]>
-                <[tmvector3d][X0][0.0 0.0 1.0]>
-                <[tmvector3d][R0][ -3.416 0.000 -0.430 ]>
-                <[string8][InputLock][1.0]>
-                <[uint32][Type][1]>
-            >
             <[wheel][FrontWheelHull][]
                 <[float64][K][12000.0]>
                 <[float64][D][90.0]>
@@ -105,6 +55,22 @@
             >
             <[output][GroundRollLoadFrontWheel][]
                 <[string8][Input][FrontWheelHull.Load]>
+            >
+            // LeftGear
+            <[rigidbody][LeftGear][]
+                <[float64][Mass][19.2]>
+                <[tmvector3d][InertiaLength][ 0.494 0.177 0.494 ]>
+                <[tmvector3d][R0][-0.145 0.960 -1.021]>
+                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+            >
+            <[multibody_joint][JointFuselageLeftGear][]
+                <[string8][Body0][Fuselage]>
+                <[string8][Body1][LeftGear]>
+                <[tmvector3d][X0][0.0 0.0 1.0]>
+                <[tmvector3d][R0][ -0.145 0.960 -1.021 ]>
+                <[float64][Kp][52000.0]>
+                <[float64][Kd][200.0]>
+                <[uint32][Type][1]>
             >
             <[wheel][LeftWheelHull][]
                 <[float64][K][44800.0]>
@@ -125,6 +91,22 @@
             <[output][GroundRollLoadLeftWheel][]
                 <[string8][Input][LeftWheelHull.Load]>
             >
+            // RightGear
+            <[rigidbody][RightGear][]
+                <[float64][Mass][19.2]>
+                <[tmvector3d][InertiaLength][ 0.494 0.177 0.494 ]>
+                <[tmvector3d][R0][-0.145 -0.960 -1.021]>
+                <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
+            >
+            <[multibody_joint][JointFuselageRightGear][]
+                <[string8][Body0][Fuselage]>
+                <[string8][Body1][RightGear]>
+                <[tmvector3d][X0][0.0 0.0 1.0]>
+                <[tmvector3d][R0][ -0.145 -0.960 -1.021 ]>
+                <[float64][Kp][52000.0]>
+                <[float64][Kd][200.0]>
+                <[uint32][Type][1]>
+            >
             <[wheel][RightWheelHull][]
                 <[float64][K][44800.0]>
                 <[float64][D][336.0]>
@@ -144,6 +126,7 @@
             <[output][GroundRollLoadRightWheel][]
                 <[string8][Input][RightWheelHull.Load]>
             >
+			// Tail wheel
             <[wheel][TailWheelHull][]
                 <[float64][K][3422.0]>
                 <[float64][D][171.1]>
@@ -151,7 +134,7 @@
                 <[float64][Width][0.043]>
                 <[float64][RimRadius][0.020]>
                 <[float64][Inflation][210000.0]>
-                <[string8][Body][TailGear]>
+                <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][-3.416 0.000 -0.430]>
                 <[tmvector3d][X0][ 1.000 0.000 0.0 ]>
             >

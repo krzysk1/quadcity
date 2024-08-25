@@ -271,19 +271,15 @@
             >
 			// right wheel
             <[graphics_input][GearTranslationInput][]
-                <[uint32][InputID][ServoThrottle.Output]>
+                <[uint32][InputID][ServoGear.Output]>
                 <[float64][Scaling][1.0000]>
             >
             <[graphics_translation][FloatsMoving_188][]
                 <[string8][Input][GearTranslationInput.Output]>
                 <[tmvector3d][Axis][0.0 0.0 -0.065087]>
             >
-            <[graphics_linear_interpolation][FloatsMapping_190][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0) (180.0 3.141593)]>
-            >
             <[graphics_rotation][FloatsRotate_190][]
-                <[string8][Input][FloatsMapping_190.Output]>
+                <[string8][Input][1]>
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][-0.145118 -0.909573 -1.188467]>
                 <[string8][InputTransform][FloatsMoving_188.Output]>
@@ -295,19 +291,11 @@
                 <[string8][InputTransform][FloatsRotate_190.Output]>
             >
 			// left wheel
-            <[graphics_translation][FloatsMoving_195][]
-                <[string8][Input][GearTranslationInput.Output]>
-                <[tmvector3d][Axis][0.0 0.0 -0.065087]>
-            >
-            <[graphics_linear_interpolation][FloatsMapping_197][]
-                <[string8][Input][Static_rotation_Input.Output]>
-                <[tmvector2d][Map][(0.0 0.0) (180.0 -3.141593)]>
-            >
             <[graphics_rotation][FloatsRotate_197][]
-                <[string8][Input][FloatsMapping_197.Output]>
+                <[string8][Input][1]>
                 <[tmvector3d][Axis][0.000044 1.0 0.0]>
                 <[tmvector3d][Pivot][-0.145140 0.914830 -1.188466]>
-                <[string8][InputTransform][FloatsMoving_195.Output]>
+                <[string8][InputTransform][FloatsRotate_190.Output]>
             >
             <[rigidbodygraphics][Floats_25720_1][]
                 <[string8][GeometryList][ Floats257201 ]>
@@ -360,7 +348,7 @@
                 <[string8][GeometryList][ Floatscockpit365349 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][Input][Static_rotation_Input.Output]>
+                <[uint32][InputID][GearLever.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][1.204870 -0.012486 -0.162335]>
                 <[float64][Offset][-0.261799]>
