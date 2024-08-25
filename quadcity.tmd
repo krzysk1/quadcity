@@ -1396,6 +1396,7 @@
                 <[tmvector3d][Axis][0.984808 0.0 -0.173648]>
                 <[tmvector3d][Pivot][1.193420 -0.052872 -0.178402]>
             >
+			// ampere/volt indicator
             <[graphics_linear_interpolation][CockpitMapping_990][]
                 <[string8][Input][Static_rotation_Input.Output]>
                 <[tmvector2d][Map][(0.0 0.568279) (20.0 -0.876504)]>

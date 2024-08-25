@@ -169,12 +169,7 @@
         // Standard gear
         // --------------------------------
             <[rigidbodygraphics][StandardGearBase][]
-                <[string8][GeometryList][ Standardgear6 Standardgear1926 Standardgear5526 Standardgear26916 Standardgear35016 Standardgear56406 Standardgear60906 Standardgear95466 Standardgear99966 Standardgear117246 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-            >
-            <[rigidbodygraphics][StandardGear_12894_6][]
-                <[string8][GeometryList][ Standardgear128946 ]>
+                <[string8][GeometryList][ Standardgear6 Standardgear1926 Standardgear5526 Standardgear26916 Standardgear35016 Standardgear56406 Standardgear60906 Standardgear95466 Standardgear99966 Standardgear117246 Standardgear128946 ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
