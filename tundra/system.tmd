@@ -6,7 +6,7 @@
             <[rigidbody][Fuselage][]
                 <[float64][Mass][139.2]>
                 <[tmvector3d][InertiaLength][4.883 0.951 1.509]>
-                <[tmvector3d][R0][0.162 0.000 0.014]>
+                <[tmvector3d][R0][0.062 0.000 0.014]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
 
