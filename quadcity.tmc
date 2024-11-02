@@ -1,19 +1,23 @@
 <[file][][]
-    <[object][][]
-        <[int][Version][220]>
-        <[vec32array][ContactSpheres][ (1.458 0.000 -1.003 0.168) (-0.142 0.914 -1.003 0.168) (-0.142 -0.914 -1.003 0.168) ]>
-        <[string8][ICAO][]>
+    <[modelinformation][][]
+        <[int32][Version][220]>
+        <[list_vector4_float64][ContactSpheres][ (1.458 0.000 -1.003 0.168) (-0.142 0.914 -1.003 0.168) (-0.142 -0.914 -1.003 0.168) ]>
+        <[stringt8c][ICAO][]>
         <[string8][DisplayName][Quad City Challenger II]>
         <[string8][DisplayNameFull][Quad City Challenger II long wing]>
-        <[localized_text_list][Descriptions][]
-            <[localized_text][][]
+        <[list_localized_text][Descriptions][]
+            <[localized_text][element][0]
                 <[string8][Language][en]>
                 <[string8][Text][The Quad City Challenger ultralight is a high wing, tricycle gear kit aircraft with a frame structure. It can accept a variety of engines ranging from 50hp to 70hp. Made by Krzysztof Kaniewski. 3D model: Garren Hansen.]>
             >
-            <[localized_text][][]
+            <[localized_text][element][1]
                 <[string8][Language][de]>
                 <[string8][Text][Das Ultraleichtflugzeug Quad City Challenger ist ein Hochdecker mit Dreiradfahrwerk und einem Rahmen aus Stangen. Es kann verschiedene Motoren mit einer Leistung von 50 PS bis 70 PS aufnehmen. Hergestellt von Krzysztof Kaniewski. 3D-Modell: Garren Hansen.]>
-            >			
+            >
+            <[localized_text][element][2]
+                <[string8][Language][pl]>
+                <[string8][Text][Quad City Challenger to ultralekki samolot z wysokim skrzydłem i trójkołowym podwoziem o konstrukcji ramowej. Może przyjmować różne silniki o mocy od 50 KM do 70 KM. Wykonany przez Krzysztofa Kaniewskiego. Model 3D: Garren Hansen.]>
+			>
         >
         <[float64][MaximumTakeoffMass][435.0]>
         <[float64][WingSpan]          [9.60]>
@@ -30,7 +34,7 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [41.5]>
         <[float64][MaximumRange]      [320000.0]>
-		<[tmvector2d][FlapAirspeedRange]   [ 0.0 0.0 ]>			
+		<[tmvector2d][FlapAirspeedRange]   [ 0.0 0.0 ]>
         <[tmvector2d][NormalAirspeedRange] [ 12.0 35.0 ]>
         <[tmvector2d][CautionAirspeedRange][ 35.0 43.5 ]>
         <[string8][Tags][ airplane piston general_aviation ultralight gear floats ]>
@@ -108,7 +112,7 @@
 // Deflection [m]- zero load : 0.0144 empty :0.0000 max :0.0000
 // Damping constants (lb/(ft/s)) :146.467437744 kg/(m/s) : 217.9676
 //-------------------------------------------------------
-// No 1 LeftWheelHull single   
+// No 1 LeftWheelHull single
 // Brakes   Fraction weight: 0.44249 kg :109.6
 // Pivot lon lat vert: -0.142216 0.914400 -1.002792
 // Length [m]: 0.0000 Radius [m]: 0.1676 Semi-width [m]: 0.0610 tire_mi : 0.0000
@@ -116,7 +120,7 @@
 // Deflection [m]- zero load : 0.0552 empty :0.0000 max :0.0000
 // Damping constants (lb/(ft/s)) :146.467437744 kg/(m/s) : 217.9676
 //-------------------------------------------------------
-// No 2 RightWheelHull single   
+// No 2 RightWheelHull single
 // Brakes   Fraction weight: 0.44249 kg :109.6
 // Pivot lon lat vert: -0.142216 -0.914400 -1.002792
 // Length [m]: 0.0000 Radius [m]: 0.1676 Semi-width [m]: 0.0610 tire_mi : 0.0000
@@ -124,7 +128,7 @@
 // Deflection [m]- zero load : 0.0552 empty :0.0000 max :0.0000
 // Damping constants (lb/(ft/s)) :146.467437744 kg/(m/s) : 217.9676
 //-------------------------------------------------------
-// No 3 TailWheelHull single   
+// No 3 TailWheelHull single
 //    Fraction weight: 0.00000 kg :0.0
 // Pivot lon lat vert: -3.415768 0.000000 -0.429768
 // Length [m]: 0.0000 Radius [m]: 0.0396 Semi-width [m]: 0.0213 tire_mi : 0.0000
