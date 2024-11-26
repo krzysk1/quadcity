@@ -7,23 +7,23 @@
         <[string8][DisplayNameFull][Quad City Challenger II long wing]>
         <[list_localized_text][Descriptions][]
             <[localized_text][element][0]
-                <[string8][Language][en]>
+                <[string8u][Language][en]>
                 <[string8][Text][The Quad City Challenger ultralight is a high wing, tricycle gear kit aircraft with a frame structure. It can accept a variety of engines ranging from 50hp to 70hp. Made by Krzysztof Kaniewski. 3D model: Garren Hansen.]>
             >
             <[localized_text][element][1]
-                <[string8][Language][de]>
+                <[string8u][Language][de]>
                 <[string8][Text][Das Ultraleichtflugzeug Quad City Challenger ist ein Hochdecker mit Dreiradfahrwerk und einem Rahmen aus Stangen. Es kann verschiedene Motoren mit einer Leistung von 50 PS bis 70 PS aufnehmen. Hergestellt von Krzysztof Kaniewski. 3D-Modell: Garren Hansen.]>
             >
             <[localized_text][element][2]
-                <[string8][Language][pl]>
-                <[string8][Text][Quad City Challenger to ultralekki samolot z wysokim skrzydłem i trójkołowym podwoziem o konstrukcji ramowej. Może przyjmować różne silniki o mocy od 50 KM do 70 KM. Wykonany przez Krzysztofa Kaniewskiego. Model 3D: Garren Hansen.]>
+                <[string8u][Language][pl]>
+                <[string8][Text][Quad City Challenger to ultralekki górnopłat i trójkołowym podwoziem o konstrukcji ramowej. Może korzystać z różnych silników o mocy od 50 KM do 70 KM. Dla Aerofly FS4 model wykonany przez Krzysztofa Kaniewskiego. Orginalny model 3D: Garren Hansen.]>
 			>
         >
         <[float64][MaximumTakeoffMass][435.0]>
         <[float64][WingSpan]          [9.60]>
-        <[uint]   [Year]              [1960]>
-        <[uint]   [UnitsBuilt]        [6884]>
-        <[uint]   [EngineCount]       [1]>
+        <[uint32] [Year]              [1960]>
+        <[uint32] [UnitsBuilt]        [6884]>
+        <[uint32] [EngineCount]       [1]>
         <[float64][EnginePower]       [48470]>
         <[float64][MinimumAirspeed]   [12.0]>
         <[float64][ApproachAirspeed]  [18.0]>
@@ -34,9 +34,9 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [41.5]>
         <[float64][MaximumRange]      [320000.0]>
-		<[tmvector2d][FlapAirspeedRange]   [ 0.0 0.0 ]>
-        <[tmvector2d][NormalAirspeedRange] [ 12.0 35.0 ]>
-        <[tmvector2d][CautionAirspeedRange][ 35.0 43.5 ]>
+		<[vector2_float64][FlapAirspeedRange]   [ 0.0 0.0 ]>
+        <[vector2_float64][NormalAirspeedRange] [ 12.0 35.0 ]>
+        <[vector2_float64][CautionAirspeedRange][ 35.0 43.5 ]>
         <[string8][Tags][ airplane piston general_aviation ultralight gear floats ]>
         <[string8][Pilot][pilot_daniel]>
     >
