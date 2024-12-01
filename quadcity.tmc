@@ -24,7 +24,7 @@
         <[uint32] [Year]              [1960]>
         <[uint32] [UnitsBuilt]        [6884]>
         <[uint32] [EngineCount]       [1]>
-        <[float64][EnginePower]       [48470]>
+        <[float64][EnginePower]       [48470.0]>
         <[float64][MinimumAirspeed]   [12.0]>
         <[float64][ApproachAirspeed]  [18.0]>
         <[float64][CruiseAirspeed]    [37.0]>
@@ -34,7 +34,6 @@
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [41.5]>
         <[float64][MaximumRange]      [320000.0]>
-		<[vector2_float64][FlapAirspeedRange]   [ 0.0 0.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 12.0 35.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 35.0 43.5 ]>
         <[string8][Tags][ airplane piston general_aviation ultralight gear floats ]>

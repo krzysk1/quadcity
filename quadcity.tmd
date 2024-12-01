@@ -21,15 +21,14 @@
             // cameras start
 
             <[camera][CameraFollow][]
-                <[string8][Description][Behind aircraft]>
                 <[string8][Body][Fuselage]>
                 <[tmvector3d][R0][ -6.0 0.0 0.7 ]>
                 <[tmvector3d][Direction][1.0 0.0 0.0]>
             >
             <[camera_head][CameraPilot][]
-                <[string8][Tags][cockpit pilot]>
+                <[string8][Tags][cockpit pilot front]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ 0.52 0.0 0.19 ]>
+                <[tmvector3d][R0][ 0.54 0.0 0.19 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][Kf][40.0]>
                 <[float64][Df][1.00]>
@@ -38,9 +37,9 @@
                 <[bool][InCockpit][true]>
             >
             <[camera_head][CameraPassenger][]
-                <[string8][Tags][cockpit passenger]>
+                <[string8][Tags][cockpit passenger rear]>
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][R0][ -0.18 0.0 0.29 ]>
+                <[tmvector3d][R0][ -0.15 0.0 0.25 ]>
                 <[tmvector3d][Direction][ 1.0 0.0 0.0 ]>
                 <[float64][Kf][40.0]>
                 <[float64][Df][1.00]>
