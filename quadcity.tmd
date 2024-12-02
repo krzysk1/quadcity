@@ -1492,12 +1492,12 @@
 
             // Canopy windows
             <[rigidbodygraphics][FrontWindshield][]
-                <[string8][GeometryList][ Windows181868 ]>
+                <[string8][GeometryList][ Windows181868 Windows181868Ext ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
             >
             <[hingedbodygraphics][RightWindow][]
-                <[string8][GeometryList][ Windows8 Windows170888 ]>
+                <[string8][GeometryList][ Windows8 Windows170888 Windows170888Ext ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][CanopySequence.Output]>
@@ -1507,7 +1507,7 @@
                 <[float64][Offset][0.0]>
             >
             <[hingedbodygraphics][LeftWindow][]
-                <[string8][GeometryList][ Windows85448 Windows176378 ]>
+                <[string8][GeometryList][ Windows85448 Windows176378 Windows176378Ext ]>
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[string8][InputID][CanopySequence.Output]>
