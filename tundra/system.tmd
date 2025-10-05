@@ -50,10 +50,10 @@
                 <[tmvector3d][R0][1.470 0.000 -1.055]>
                 <[tmvector3d][X0][ 1.000 0.000 0.0 ]>
             >
-            <[output][GroundRollSpeedFrontWheel][]
+            <[output][GroundRollSpeedFront][]
                 <[string8][Input][FrontWheelHull.Speed]>
             >
-            <[output][GroundRollLoadFrontWheel][]
+            <[output][GroundRollLoadFront][]
                 <[string8][Input][FrontWheelHull.Load]>
             >
             // LeftGear
@@ -85,10 +85,10 @@
                 <[string8][InputBrake][LeftBrakeInput.Output]>
                 <[float64][BrakeStrength][0.75]>
             >
-            <[output][GroundRollSpeedLeftWheel][]
+            <[output][GroundRollSpeedLeft][]
                 <[string8][Input][LeftWheelHull.Speed]>
             >
-            <[output][GroundRollLoadLeftWheel][]
+            <[output][GroundRollLoadLeft][]
                 <[string8][Input][LeftWheelHull.Load]>
             >
             // RightGear
@@ -120,10 +120,10 @@
                 <[string8][InputBrake][RightBrakeInput.Output]>
                 <[float64][BrakeStrength][0.75]>
             >
-            <[output][GroundRollSpeedRightWheel][]
+            <[output][GroundRollSpeedRight][]
                 <[string8][Input][RightWheelHull.Speed]>
             >
-            <[output][GroundRollLoadRightWheel][]
+            <[output][GroundRollLoadRight][]
                 <[string8][Input][RightWheelHull.Load]>
             >
 			// Tail wheel

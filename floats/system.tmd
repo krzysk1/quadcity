@@ -37,10 +37,10 @@
                 <[tmvector3d][R0][1.534 0.000 -1.301]>
                 <[tmvector3d][X0][ 1.000 0.000 0.0 ]>
             >
-            <[output][GroundRollSpeedFrontWheel][]
+            <[output][GroundRollSpeedFront][]
                 <[string8][Input][FrontWheelHull.Speed]>
             >
-            <[output][GroundRollLoadFrontWheel][]
+            <[output][GroundRollLoadFront][]
                 <[string8][Input][FrontWheelHull.Load]>
             >
             // LeftGear
@@ -85,10 +85,10 @@
                 <[string8][InputBrake][LeftBrakeInput.Output]>
                 <[float64][BrakeStrength][0.75]>
             >
-            <[output][GroundRollSpeedLeftWheel][]
+            <[output][GroundRollSpeedLeft][]
                 <[string8][Input][LeftWheelHull.Speed]>
             >
-            <[output][GroundRollLoadLeftWheel][]
+            <[output][GroundRollLoadLeft][]
                 <[string8][Input][LeftWheelHull.Load]>
             >
             // RightGear
@@ -133,13 +133,13 @@
                 <[string8][InputBrake][RightBrakeInput.Output]>
                 <[float64][BrakeStrength][0.75]>
             >
-            <[output][GroundRollSpeedRightWheel][]
+            <[output][GroundRollSpeedRight][]
                 <[string8][Input][RightWheelHull.Speed]>
             >
-            <[output][GroundRollLoadRightWheel][]
+            <[output][GroundRollLoadRight][]
                 <[string8][Input][RightWheelHull.Load]>
             >
-			
+
             // bodies
             <[aerofuselage][LeftSwimmerAero][]
                 <[string8][Body][Fuselage]>
@@ -262,7 +262,7 @@
                 <[tmvector3d][Pivot][-0.145140 0.914830 -1.188466]>
                 <[string8][InputTransform][FloatsMovingMainGear.Output]>
             >
-			// front wheel		
+			// front wheel
             <[movinggraphics][FloatsMovingFrontGear][]
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>

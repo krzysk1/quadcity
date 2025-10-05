@@ -19,6 +19,12 @@ Use it at your own risk!
 
 https://en.wikipedia.org/wiki/Quad_City_Challenger
 
+
+Challenger II
+Two seats in tandem, 31.5 ft (9.6 m) wingspan provides more lift and lower stall speed. Can be equipped with floats. Engines 40 hp (30 kW) Rotax 447, 50 hp (37 kW) Rotax 503, 64 hp (48 kW) 582 or 60 hp (45 kW) HKS 700E. Qualifies as a US Experimental - Amateur-Built or Light sport aircraft, 2000 reported completed and flown by the fall of 2011.
+
+The Rotax 582 is a 48 kW (64 hp) two-stroke, two-cylinder, rotary intake valve, oil-in-fuel or oil injection pump, liquid-cooled, gear reduction-drive aircraft engine manufactured by BRP-Rotax GmbH & Co. KG. It is for use in non-certified aircraft operating in day visual flight rules.[3]
+
 	General characteristics
 
 	Crew: one
@@ -41,6 +47,17 @@ https://en.wikipedia.org/wiki/Quad_City_Challenger
 	Rate of climb: 750 ft/min (3.8 m/s)
 	Wing loading: 5.42 lb/sq ft (26.5 kg/m2)
 	Power/mass: 19.2 lb/hp (0.087 kW/kg)
+	
+
+https://en.wikipedia.org/wiki/Rotax_582
+	
+	Specifications (Rotax 582)
+	General characteristics
+	Type: two-cylinder, two-stroke, rotary valve, oil-in-fuel or oil-injected lubrication, dual carburetors, electronic dual ignition
+	Bore: 76 mm (2.99 in)
+	Stroke: 64 mm (2.52 in)
+	Displacement: 580.7 cm3 (35.44 cu in)
+	Dry weight: 50 kg (110 lb) with electric starter, carburetors, fuel pump, air filters and reduction gear	
 
 # Note from Garren Hansen:
 

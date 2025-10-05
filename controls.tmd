@@ -105,7 +105,7 @@
 			// barometer setting
             <[control_cylinder][PressureSettingKnob][]
                 <[string8][Type][knob]>
-                <[vector3_float64][R0][1.189 0.1224 -0.1837]>
+                <[vector3_float64][R0][1.189 0.1224 -0.1882]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
                 <[vector3_float64][Direction][  0.984808 0.0 -0.173649 ]>
                 <[float64][StepAngle][0.1]>

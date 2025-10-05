@@ -15,6 +15,18 @@
                 <[string8][Text][Das Ultraleichtflugzeug Quad City Challenger ist ein Hochdecker mit Dreiradfahrwerk und einem Rahmen aus Stangen. Es kann verschiedene Motoren mit einer Leistung von 50 PS bis 70 PS aufnehmen. Hergestellt von Krzysztof Kaniewski. 3D-Modell: Garren Hansen.]>
             >
             <[localized_text][element][2]
+                <[string8u][Language][fr]>
+                <[string8][Text][L'ultra-léger Quad City Challenger est un avion à ailes hautes, équipé d'un train d'atterrissage tricycle et d'une structure à ossature. Il peut être équipé de différents moteurs allant de 50 à 70 chevaux. Fabriqué par Krzysztof Kaniewski. Modèle 3D : Garren Hansen.]>
+			>
+            <[localized_text][element][3]
+                <[string8u][Language][es]>
+                <[string8][Text][El ultraligero Quad City Challenger es un avión de ala alta con tren de aterrizaje triciclo y estructura de bastidor. Puede equiparse con una variedad de motores que van desde los 50 CV hasta los 70 CV. Fabricado por Krzysztof Kaniewski. Modelo 3D: Garren Hansen.]>
+			>
+            <[localized_text][element][4]
+                <[string8u][Language][it]>
+                <[string8][Text][Il Quad City Challenger ultraleggero è un velivolo ad ala alta con carrello triciclo e struttura a telaio. Può montare una varietà di motori da 50 a 70 CV. Realizzato da Krzysztof Kaniewski. Modello 3D: Garren Hansen.]>
+			>
+            <[localized_text][element][5]
                 <[string8u][Language][pl]>
                 <[string8][Text][Quad City Challenger to ultralekki górnopłat i trójkołowym podwoziem o konstrukcji ramowej. Może korzystać z różnych silników o mocy od 50 KM do 70 KM. Dla Aerofly FS4 model wykonany przez Krzysztofa Kaniewskiego. Orginalny model 3D: Garren Hansen.]>
 			>
