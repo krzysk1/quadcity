@@ -1,7 +1,7 @@
 <[file][][]
     <[modelinformation][][]
         <[int32][Version][220]>
-        <[list_vector4_float64][ContactSpheres][ (1.458 0.000 -1.003 0.168) (-0.142 0.914 -1.003 0.168) (-0.142 -0.914 -1.003 0.168) ]>
+        <[list_vector4_float64][ContactSpheres][ (1.459 0.0 -1.021 0.147) (-0.142 0.914 -1.003 0.147) (-0.142 -0.914 -1.003 0.147) ]>
         <[stringt8c][ICAO][]>
         <[string8][DisplayName][Quad City Challenger II]>
         <[string8][DisplayNameFull][Quad City Challenger II long wing]>
@@ -33,19 +33,20 @@
         >
         <[float64][MaximumTakeoffMass][435.0]>
         <[float64][WingSpan]          [9.60]>
-        <[uint32] [Year]              [1960]>
-        <[uint32] [UnitsBuilt]        [6884]>
+        <[uint32] [Year]              [1983]>
+        <[uint32] [UnitsBuilt]        [2000]>
         <[uint32] [EngineCount]       [1]>
         <[float64][EnginePower]       [48470.0]>
         <[float64][MinimumAirspeed]   [12.0]>
         <[float64][ApproachAirspeed]  [18.0]>
         <[float64][CruiseAirspeed]    [37.0]>
         <[float64][CruiseAltitude]    [3352.8]>
-        <[float64][CruiseSpeed]       [47.5]>
+        <[float64][CruiseSpeed]       [37.5]>
         <[float64][MaximumAirspeed]   [41.5]>
         <[float64][MaximumAltitude]   [6306.0]>
         <[float64][MaximumSpeed]      [41.5]>
         <[float64][MaximumRange]      [320000.0]>
+        <[vector2_float64][FlapAirspeedRange]   [  0.0  0.0 ]>
         <[vector2_float64][NormalAirspeedRange] [ 12.0 35.0 ]>
         <[vector2_float64][CautionAirspeedRange][ 35.0 43.5 ]>
         <[string8][Tags][ airplane piston general_aviation ultralight gear floats ]>

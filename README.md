@@ -17,6 +17,11 @@ Use it at your own risk!
 
 # Resources
 
+https://www.challenger.ca/airplane_performance_table.html
+https://www.scribd.com/document/750060958/Challenger-II-POH
+https://challenger.uflyit.com/performa.htm
+
+
 https://en.wikipedia.org/wiki/Quad_City_Challenger
 
 
@@ -48,6 +53,31 @@ The Rotax 582 is a 48 kW (64 hp) two-stroke, two-cylinder, rotary intake valve, 
 	Wing loading: 5.42 lb/sq ft (26.5 kg/m2)
 	Power/mass: 19.2 lb/hp (0.087 kW/kg)
 	
+https://www.globalair.com/aircraft-for-sale/specifications?specid=75
+
+https://en.wikipedia.org/wiki/Rotax_503
+
+	Specifications (503)
+
+	General characteristics
+	Type: two-stroke air-cooled aeroengine
+	Bore: 72 mm (2.84 in)
+	Stroke: 61 mm (2.4 in)
+	Displacement: 503cc 30.69 (cu in)
+	Dry weight: 31.4 kg (69 lb) (dry, no exhaust system)
+	Components
+	Valvetrain: piston ports
+	Fuel system: pneumatic pump pressurized
+	Fuel type: regular autofuel
+	Oil system: premixed in the fuel at 50:1 or oil injection
+	Cooling system: fan or free air
+	Reduction gear: Rotax 'B' gearbox: 2.00, 2.24 or 2.58 ratios; Rotax 'C' or 'D' gearbox: 2.62, 3.00, 3.47 or 4.00 ratios
+	Performance
+	Power output: 37 kW (50 hp) at 6800 rpm
+	Compression ratio: 10.8 (theoretical)
+	Fuel consumption: 15 L/hr (4 US gph)
+	Power-to-weight ratio: 1.18 kW/kg (0.72 hp/lb)
+
 
 https://en.wikipedia.org/wiki/Rotax_582
 	

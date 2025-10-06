@@ -1,8 +1,8 @@
 <[file][][]
   <[object][][]
-    <[string8][Description][Tundra]>
+    <[string8][Description][Red (Tundra)]>
     <[string8][Type][hidden]>
     <[string8][Tags][undercarriage]>
-    <[vec32array][ContactSpheres][ (1.470 0.000 -1.055 0.207) (-0.145 0.960 -1.021 0.247) (-0.145 -0.960 -1.021 0.247) ]>	
+    <[vec32array][ContactSpheres][ (1.470 0.000 -1.055 0.206) (-0.145 0.960 -1.021 0.245) (-0.145 -0.960 -1.021 0.245) ]>
   >
 >

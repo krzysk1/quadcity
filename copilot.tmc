@@ -4,11 +4,11 @@
         <[float64][MaximumTakeOffMass][435.0]>
         <[float64][WingSpan][9.60]>
         <[float64][WingArea][16.4]>
-        <[float64][NoseWheelPositionX][1.458]>		
+        <[float64][NoseWheelPositionX][1.458]>
         <[float64][HeightOffset][-1.171]>
         <[float64][ApproachSpeed][18.0]>
         <[float64][PatternSpeed][25.0]>
-        <[float64][InitialClimbSpeed][16.0]>
+        <[float64][InitialClimbSpeed][14.0]>
         <[int][EngineCount][1]>
         <[bool][Piston][true]>
         <[bool][GeneralAviation][true]>
@@ -18,7 +18,7 @@
         <[float64][RudderSteeringGain][0.5]>
         <[float64][RudderCrossWind][0.8]>
         <[float64][AileronGain][0.4]>
-        <[float64][ElevatorGain][0.4]>
+        <[float64][ElevatorGain][2.0]>
         <[float64][RudderGain][0.4]>
         <[float64][FlareHeightScaling][0.5]>
         <[float64][FlareExpectedNoseDrop][0.1]>
