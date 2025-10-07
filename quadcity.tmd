@@ -15,7 +15,6 @@
             // telemetry
             <[telemetry][Telemetry][]
                 <[string8][Body][Fuselage]>
-                <[tmvector3d][LookAtPosition][ 0.1 0.0 -0.2 ]> // mass: 247.8  cm=(-0.066 0.000 0.026)
             >
 
             // cameras start
@@ -978,6 +977,16 @@
                 <[string8][Input][CanopySequence.Output]>
             >
 
+			// GPS zoom
+            <[input_discrete][GPSZoom][]
+                <[string8][Message][GPS.Zoom]>
+                <[string8][Range][ -6.0 3.0 ]>
+                <[float64][Value][-4.0]>
+                <[bool][Toggle][true]>
+            >
+            <[output_free][GPSZoomOutput][]
+                <[string8][Input][GPSZoom.Output]>
+            >
 
             // animations end
 
@@ -1387,34 +1396,19 @@
                 <[tmvector3d][Pivot][-3.465405 -0.006740 -0.139811]>
             >
 			// Elevator gear and rod
-            <[graphics_input][Elevator1_deg_0_Input][]
-                <[uint32][InputID][ElevatorPosition.Output]>
-                <[float64][Scaling][20.0000]>
+            <[graphics_input][ElevatorInput][]
+                <[uint32][InputID][ServoElevator.Output]>
             >
-            <[graphics_linear_interpolation][FuseTubingMapping_303][]
-                <[string8][Input][Elevator1_deg_0_Input.Output]>
-                <[tmvector2d][Map][(-20.0 -0.349066) (20.0 0.349066)]>
+            <[graphics_linear_interpolation][ElevatorRodMapping][]
+                <[string8][Input][ElevatorInput.Output]>
+                <[tmvector2d][Map][(-0.349066 0.28)(0.0 0.0)(0.349066 -0.32)]>
             >
-            <[graphics_rotation][FuseTubingRotate_303][]
-                <[string8][Input][FuseTubingMapping_303.Output]>
-                <[tmvector3d][Axis][0.0 -1.0 0.0]>
-                <[tmvector3d][Pivot][-3.465410 -0.093803 -0.139811]>
-            >
-            <[graphics_linear_interpolation][FuseTubingMapping_306][]
-                <[string8][Input][Elevator1_deg_0_Input.Output]>
-                <[tmvector2d][Map][(-20.0 0.261799)(0.0 0.0)(20.0 -0.349066)]>
-            >
-            <[graphics_rotation][FuseTubingRotate_306][]
-                <[string8][Input][FuseTubingMapping_306.Output]>
+            <[hingedbodygraphics][ElevatorRod][]
+                <[string8][GeometryList][ Fusetubing1403222 ]>
+                <[string8][Input][ElevatorRodMapping.Output]>
                 <[tmvector3d][Axis][0.0 -1.0 0.0]>
                 <[tmvector3d][Pivot][-3.581700 -0.111868 -0.204928]>
-                <[string8][InputTransform][FuseTubingRotate_303.Output]>
-            >
-            <[rigidbodygraphics][ElevatorRod][]
-                <[string8][GeometryList][ Fusetubing1403222 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FuseTubingRotate_306.Output]>
+                <[string8][Graphics][Elevator]>
             >
             <[hingedbodygraphics][ElevatorGear][]
                 <[string8][GeometryList][ Fusetubing1434182 ]>
@@ -1722,6 +1716,33 @@
                 <[tmvector3d][Pivot][ 1.1970 -0.0038 -0.2668 ]>
                 <[float64][Scaling][0.17]>
                 <[string8][InputID][BalanceIndicatorDeflection.Output]>
+            >
+
+			//GPS map
+            <[texture_animation][DisplayTexture][]
+                <[string8][TextureName][display_color]>
+                <[string8][RenderList][ DisplayMap DisplayMapAircraft ]>
+            >
+            <[graphics_input][GPSZoom][]
+                <[uint32][InputID][GPSZoom.Output]>
+                <[float64][Scaling][1.0]>
+                <[float64][Offset][6.0]>
+            >
+            <[texture_animation_map_display][DisplayMap][]
+                <[uint32][PositionID][Fuselage.R]>
+                <[uint32][OrientationID][Fuselage.Q]>
+                <[tmvector2d][TargetPosition][ 0.0 0.0 ]>
+                <[tmvector2d][TargetSize][ 1.0 1.0 ]>
+                <[tmvector2d][TargetScale][ 512 512 ]>
+                <[string8][InputZoom][GPSZoom.Output]>
+            >
+            <[texture_animation_rectangle][DisplayMapAircraft][]
+                <[tmvector2d][TargetPosition][ 251 256 ]>
+                <[tmvector2d][TargetSize][ 10 10 ]>
+                <[tmvector2d][TargetScale][ 512 512 ]>
+                <[tmvector2d][SourcePosition][ 0 64 ]>
+                <[tmvector2d][SourceSize][ 64 64 ]>
+                <[tmvector2d][SourceScale][ 512 512 ]>
             >
 
             // human animation
