@@ -207,8 +207,10 @@
                 <[float64][Cm][ 0.0 ]>
             >
 
-            <[input_binary][GearInput][]
+            <[input_switch][GearInput][]
                 <[string8][Message][Controls.Gear]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
                 <[float64][Value][1.0]>
             >
             <[servoclassic][GearLever][]

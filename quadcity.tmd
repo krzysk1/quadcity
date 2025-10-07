@@ -959,8 +959,10 @@
             // animations start
 
             // canopy
-            <[input_binary][CanopyInput][]
+            <[input_switch][CanopyInput][]
                 <[string8][Message][Controls.Canopy]>
+                <[string8][Events][ SwitchSound.Trigger ]>
+                <[string8][EventsRelease][ SwitchSound.Trigger ]>
                 <[float64][Value][0.0]>
             >
             <[output_free][CanopyInputOutput][]
@@ -1306,8 +1308,8 @@
                 <[uint32][PositionID][Fuselage.R]>
                 <[uint32][OrientationID][Fuselage.Q]>
                 <[uint32][InputID][ServoThrottle.Output]>
-                <[float64][Scaling][-0.959931]>
-                <[tmvector3d][Axis][0.0 -1.0 0.0]>
+                <[float64][Scaling][0.959931]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][0.919850 0.349003 -0.507230]>
             >
 
@@ -1350,36 +1352,6 @@
             >
 
 			// Rudder
-            <[graphics_input][Rudder1_deg_0_Input][]
-                <[uint32][InputID][RudderPosition.Output]>
-                <[float64][Scaling][22.0]>
-            >
-            <[graphics_linear_interpolation][FuseTubingMapping_223][]
-                <[string8][Input][Rudder1_deg_0_Input.Output]>
-                <[tmvector2d][Map][(-22.0 -0.383972) (22.0 0.383972)]>
-            >
-            <[graphics_rotation][FuseTubingRotate_223][]
-                <[string8][Input][FuseTubingMapping_223.Output]>
-                <[tmvector3d][Axis][0.0 0.0 -1.0]>
-                <[tmvector3d][Pivot][-3.476135 -0.000096 0.146011]>
-            >
-            <[graphics_linear_interpolation][FuseTubingMapping_226][]
-                <[string8][Input][Rudder1_deg_0_Input.Output]>
-                <[tmvector2d][Map][(-22.0 -0.366519) (22.0 0.366519)]>
-            >
-            <[graphics_rotation][FuseTubingRotate_226][]
-                <[string8][Input][FuseTubingMapping_226.Output]>
-                <[tmvector3d][Axis][0.0 0.0 -1.0]>
-                <[tmvector3d][Pivot][-3.506965 -0.052046 -0.305935]>
-                <[string8][InputTransform][FuseTubingRotate_223.Output]>
-            >
-            <[rigidbodygraphics][RightRudderLink][]
-                <[string8][GeometryList][ Fusetubing352382 ]>
-                <[uint32][PositionID][Fuselage.R]>
-                <[uint32][OrientationID][Fuselage.Q]>
-                <[string8][InputTransform][FuseTubingRotate_226.Output]>
-            >
-
             <[hingedbodygraphics][Rudder][]
                 <[string8][GeometryList][ Fusetubing384062 Fusetubing416702 Fusetubing418622 ]>
                 <[uint32][PositionID][Fuselage.R]>
@@ -1388,6 +1360,14 @@
                 <[tmvector3d][Axis][0.0 0.0 1.0]>
                 <[tmvector3d][Pivot][-3.476135 -0.000096 0.146011]>
                 <[float64][Scaling][0.383972]>
+            >
+            <[hingedbodygraphics][RightRudderLink][]
+                <[string8][GeometryList][ Fusetubing352382 ]>
+                <[uint32][InputID][RudderPosition.Output]>
+                <[tmvector3d][Axis][0.0 0.0 1.0]>
+                <[tmvector3d][Pivot][-3.506965 -0.052046 -0.305935]>
+                <[string8][Graphics][Rudder]>
+                <[float64][Scaling][-0.366519]>
             >
             <[hingedbodygraphics][LeftRudderLink][]
                 <[string8][GeometryList][ Fusetubing421262 ]>
@@ -1846,9 +1826,20 @@
                 <[tmvector3d][Axis][-0.05 0.0 0.0]>
                 <[string8][InputTransform][RightFootBaseTransform.Output]>
             >
-            <[graphics_translation][ThrottleHandTransform][]
+
+          <[graphics_translation][ThrottleHandTranslation][]
                 <[string8][Input][1]>
                 <[tmvector3d][Axis][0.03 0.08 -0.25]>
+            >
+            <[graphics_input][ThrottleHandInput][]
+                <[uint32][InputID][ServoThrottle.Output]>
+                <[float64][Scaling][0.959931]>
+            >
+            <[graphics_rotation][ThrottleHandTransform][]
+                <[uint32][Input][ThrottleHandInput.Output]>
+                <[tmvector3d][Axis][0.0 1.0 0.0]>
+                <[tmvector3d][Pivot][0.919850 0.349003 -0.507230]>
+                <[string8][InputTransform][ThrottleHandTranslation.Output]>
             >
 
             <[graphics_human][Pilot][]
