@@ -87,7 +87,7 @@
                 <[tmvector3d][Axis][0.0 1.0 0.0]>
                 <[tmvector3d][Pivot][0.919850 0.349003 -0.507230]>
             >			
-            <[control_sphere][ThrottleLever][2]
+            <[control_sphere][ThrottleLever][]
                 <[string8][Type][lever]>
                 <[vector3_float64][R0][ 0.9044  0.3251 -0.4491 ]>
                 <[matrix3_float64][B0][ 0.0 1.0 0.0  -1.0 0.0 0.0  0.0 0.0 1.0 ]>
@@ -99,7 +99,7 @@
                     <[string8][Qualifiers][step]>
                     <[float64][Value][0.01]>
                 >
-                <[float64][Radius][0.035]>
+                <[float64][Radius][0.017]>
             >
 		
 			// barometer setting
@@ -107,15 +107,15 @@
                 <[string8][Type][knob]>
                 <[vector3_float64][R0][1.189 0.1224 -0.1882]>
                 <[matrix3_float64][B0][ 1.0 0.0 0.0  0.0 1.0 0.0  0.0 0.0 1.0 ]>
-                <[vector3_float64][Direction][  0.984808 0.0 -0.173649 ]>
+                <[vector3_float64][Direction][ 0.984808 0.0 -0.173649 ]>
                 <[float64][StepAngle][0.1]>
                 <[control_message][OnRotate][]
                     <[string8][Message][Controls.PressureSetting]>
                     <[string8][Qualifiers][step]>
                     <[float64][Value][1.0]>
                 >
-                <[float64][Radius][0.008]>
-                <[float64][Length][0.015]>
+                <[float64][Radius][0.007]>
+                <[float64][Length][0.013]>
             >			
 
 			// alternator switch

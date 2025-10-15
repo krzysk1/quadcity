@@ -2,11 +2,11 @@
     <[modelmanager][][]
         <[pointer_list_tmgraphics][DynamicObjects][]
 
-            // airframe
+            // airframe mass: 424.3  cm=(0.011 0.000 -0.079)
             <[rigidbody][Fuselage][]
-                <[float64][Mass][192.6]>
-                <[tmvector3d][InertiaLength][4.883 0.951 1.509]>
-                <[tmvector3d][R0][0.262 0.000 0.014]>
+                <[float64][Mass][162.6]>
+                <[tmvector3d][InertiaLength][3.8 0.95 1.5]>
+                <[tmvector3d][R0][-0.1 0.0 0.014]>
                 <[tmmatrix3d][B0][1.0 0.0 0.0 0.0 1.0 0.0 0.0 0.0 1.0]>
             >
 
