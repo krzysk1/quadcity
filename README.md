@@ -1,6 +1,11 @@
 # quadcity
 Quad City Challenger II Long Wing for Aerofly FS4
 
+The Quad City Challenger II was first introduced in 1984. It was designed and produced by Chuck Hamilton and Dave Goulet of Quad City Aircraft Corp Moline, Illinois.
+
+The Challenger series includes a single place, the two place long wing, the two place wide body, and the two place clipped wing.
+
+Over 3,000 Challenger aircraft have been produced making it one of the most successful light sport aircraft designs and companies in the industry.
 
 This is free add-on for Aerofly FS4 created by Krzysztof Kaniewski with the Aerofly FS4 SDK. 3D model by Garren Hansen, credit to him.
 
@@ -17,6 +22,7 @@ Use it at your own risk!
 
 # Resources
 
+https://www.lightsportaircraft.ca/challengerII-aircraftreview/aircraft-design.html
 https://www.challenger.ca/airplane_performance_table.html
 https://www.scribd.com/document/750060958/Challenger-II-POH
 https://challenger.uflyit.com/performa.htm
