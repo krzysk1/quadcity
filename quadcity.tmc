@@ -33,8 +33,8 @@
         >
         <[float64][MaximumTakeoffMass][435.0]>
         <[float64][WingSpan]          [9.60]>
-        <[uint32] [Year]              [1983]>
-        <[uint32] [UnitsBuilt]        [2000]>
+        <[uint32] [Year]              [1984]>
+        <[uint32] [UnitsBuilt]        [3000]>
         <[uint32] [EngineCount]       [1]>
         <[float64][EnginePower]       [48470.0]>
         <[float64][MinimumAirspeed]   [12.0]>
@@ -113,6 +113,8 @@
 // Elevator -30.0 to 30.0 width 0.40  <[float64][Scaling][1.9099]>
 // Aileron -17.0 to 17.0 width 0.14  <[float64][Scaling][3.3703]>
 // Rudder -30.0 to 30.0 width 0.50  <[float64][Scaling][1.9099]>
+
+// flaperon -15-20 (down) + 10 (up)  (<55mph full down)
 //-------------------------------------------------------
 // ghost empty mass [kg] :208.7 fuelled [kg] :247.7 max [kg] :544.3
 //-------------------------------------------------------
